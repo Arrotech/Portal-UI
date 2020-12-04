@@ -1,5 +1,5 @@
 
-.staffLogin__container{
+.financeLogin__container{
     background-color: #12232E;
     margin: 7% auto;
     max-width: 500px;
@@ -13,27 +13,27 @@
     box-shadow: 0 0 3px #ccc;
 }
 
-.staffLogin__containerHeader1{
+.financeLogin__containerHeader1{
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.staffLogin__containerHeader2{
+.financeLogin__containerHeader2{
     font-size: 14px;
     text-align: center;
     font-style: italic;
 }
 
-.staffLogin__form{
+.financeLogin__form{
     display: flex;
     flex-direction: column;
     margin: 7% auto;
     max-width: 350px;
 }
 
-.staffLogin__form>p{
+.financeLogin__form>p{
     text-align: center;
     font-weight: 400;
     margin-bottom: 20px;
@@ -43,7 +43,7 @@ span{
     color: #007CC7;
 }
 
-.staffLogin__form>input{
+.financeLogin__form>input{
     background-color: #12232E;
     border: none;
     border-bottom: 1px solid #EEFBFB;
@@ -53,35 +53,36 @@ span{
     padding-left: 0;
 }
 
-.staffLogin__form>input:focus{
+.financeLogin__form>input:focus{
     outline: none;
 }
 
-.staffLogin__btn{
+.financeLogin__btn{
     border: none !important;
     background-color: #007CC7 !important;
     color: inherit;
     border-radius: 5px;
-    padding: 10px;
+    padding: 4px;
     margin-bottom: 0;
     font-weight: 600;
+    padding: 10px;
 }
-.staffLogin__btn:hover{
+.financeLogin__btn:hover{
     background-color: #4DA8DA !important;
     cursor: pointer;
 }
 
-.staffLogin__radioBtn{
+.financeLogin__radioBtn{
     display: flex;
     width: 270px;
 }
 
-.staffLogin__checkBoxText{
+.financeLogin__checkBoxText{
     padding-left: 5px;
 }
 
 @media(max-width:990px){
-    .staffLogin__container{
+    .financeLogin__container{
         max-width: 300px;
     }
 }
