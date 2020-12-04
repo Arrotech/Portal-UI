@@ -1,0 +1,17 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navBar__schoolIcon{
+    font-size: 50px !important;
+}
+.navBar__left{
+    flex: 0.2;
+}
+.navBar__right{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
