@@ -1,12 +1,16 @@
+
 .staffLogin__container{
     background-color: #12232E;
     margin: 7% auto;
     max-width: 500px;
     border-radius: 15px;
     border: 1px solid #26263b;
-    color: #fff;
+    color: #EEFBFB;
     padding: 20px;
     font-size: 11px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
 }
 
 .staffLogin__containerHeader{

@@ -1,0 +1,117 @@
+.studentLogin__container{
+    display: flex;
+    background-color: #EEFBFB;
+    margin: 7% auto;
+    max-width: 800px;
+    border-radius: 15px;
+    border: 1px solid #26263b;
+    color: #12232E;
+    font-size: 11px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.studentLogin__left{
+    flex: 0.5;
+    background-image: url('../img/education3.jpeg');
+    background-repeat: no-repeat;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.studentLogin__topLeft {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #f9f9f9;
+    font-size: 20px;
+    font-weight: 600;
+   
+  } 
+  .studentLogin__centered {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
+.studentLogin__centeredParagraph {
+    margin-top: 300px;
+    margin-left: 10px;
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
+
+.studentLogin__right{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    margin: 7% auto;
+    align-items: center;
+    max-width: 350px;
+    margin-top: 0;
+}
+
+.studentLogin__right>h1{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.studentLogin__right>h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: 400 !important;
+}
+
+.studentLogin__right>p{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.studentLogin__radioBtn{
+    display: flex;
+    width: 270px;
+}
+
+.studentLogin__checkBoxText{
+    padding-left: 5px;
+}
+
+span{
+    color: #007CC7;
+}
+
+.studentLogin__right>input{
+    background-color: #EEFBFB;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    color: #12232E;
+    width: 250px;
+    padding: 10px;
+    border-radius: 1px;
+}
+
+.studentLogin__right>input:focus{
+    outline: none;
+}
+
+.studentLogin__btn{
+    border: none !important;
+    background-color: #203647 !important;
+    color: #EEFBFB !important;
+    border-radius: 2px;
+    padding: 4px;
+    margin-bottom: 0;
+    font-weight: 600;
+    width: 270px !important;
+}
+.studentLogin__btn:hover{
+    background-color: #12232E !important;
+    cursor: pointer;
+    color: #EEFBFB;
+}
