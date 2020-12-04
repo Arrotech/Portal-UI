@@ -7,7 +7,7 @@ import FinanceLogin from './pages/FinanceLogin'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <NavBar />
         <Switch>
