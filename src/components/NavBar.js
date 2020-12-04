@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/css/NavBar.css'
 import SchoolIcon from '@material-ui/icons/School';
+import {Link} from 'react-router-dom'
 
 
 function NavBar() {
@@ -10,9 +11,9 @@ function NavBar() {
                 <SchoolIcon className="navBar__schoolIcon"/>
             </div>
             <div className="navBar__right">
-                <p>Staff</p>
-                <p>Student</p>
-                <p>Finance</p>
+                <Link className="navBar__rightLinks" to="/staff"><p>Staff</p></Link>
+                <Link className="navBar__rightLinks" to="/student"><p>Student</p></Link>
+                <Link className="navBar__rightLinks" to="/finance"><p>Finance</p></Link>
             </div>
         </div>
     )

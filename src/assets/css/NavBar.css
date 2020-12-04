@@ -15,3 +15,10 @@
     flex: 1;
     justify-content: space-evenly;
 }
+.navBar__rightLinks{
+    text-decoration: none;
+    color: inherit;
+}
+.navBar__rightLinks:hover{
+    text-decoration: underline;
+}
