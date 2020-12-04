@@ -1,0 +1,65 @@
+.staffLogin__container{
+    background-color: #12232E;
+    margin: 7% auto;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 1px solid #26263b;
+    color: #fff;
+    padding: 20px;
+    font-size: 11px;
+}
+
+.staffLogin__containerHeader{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.staffLogin__form{
+    display: flex;
+    flex-direction: column;
+    margin: 7% auto;
+    max-width: 350px;
+}
+
+.staffLogin__form>p{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #007CC7;
+}
+
+.staffLogin__form>input{
+    background-color: #12232E;
+    border: none;
+    border-bottom: 1px solid #EEFBFB;
+    margin-bottom: 20px;
+    color: #EEFBFB;
+}
+
+.staffLogin__form>input:focus{
+    outline: none;
+}
+
+.staffLogin__btn{
+    border: none !important;
+    background-color: #007CC7 !important;
+    color: inherit;
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.staffLogin__btn:hover{
+    background-color: #4DA8DA !important;
+    cursor: pointer;
+}
+
+@media(max-width:990px){
+    .staffLogin__container{
+        max-width: 300px;
+    }
+}
