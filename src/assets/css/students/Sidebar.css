@@ -1,0 +1,16 @@
+.sidebar{
+    margin-top: 20px;
+    font-size: 11px !important;
+    background-color: #12232E;
+    max-width: 200px;
+}
+
+.sidebar__links{
+    text-decoration: none;
+    color: #EEFBFB;
+}
+
+.sidebar__header{
+    font-size: 14px !important;
+    color: #007CC7;
+}

@@ -1,0 +1,9 @@
+/* .dashboard{
+    position: relative;
+} */
+
+@media(max-width:600px){
+    .dashboard__sidebar{
+        display: none;
+    }
+}
