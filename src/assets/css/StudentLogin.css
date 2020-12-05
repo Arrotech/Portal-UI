@@ -115,3 +115,13 @@ span{
     cursor: pointer;
     color: #EEFBFB;
 }
+
+@media(max-width:600px){
+    .studentLogin__left{
+        display: none;
+    }
+
+    .studentLogin__container{
+        max-width: 300px;
+    }
+}
