@@ -19,6 +19,8 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import LocalActivityIcon from '@material-ui/icons/LocalActivity';
 import SubjectIcon from '@material-ui/icons/Subject';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
+import PeopleIcon from '@material-ui/icons/People';
 import '../../assets/css/students/Sidebar.css'
 
 function Sidebar() {
@@ -36,6 +38,9 @@ function Sidebar() {
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Checklist" Icon={ListIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Evaluation" Icon={PlaylistAddCheckIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Graduation" Icon={SchoolIcon} /></Link><br/>
+            <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="CO-CURRICULUM" Icon={LocalActivityIcon} /></Link>
+            <Link className="sidebar__links" to="/fees"><SidebarOption title="Sports" Icon={SportsSoccerIcon} /></Link>
+            <Link className="sidebar__links" to="/fees"><SidebarOption title="Societies" Icon={PeopleIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="SETTINGS" Icon={SettingsIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Account" Icon={PersonIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Preferences" Icon={CardTravelIcon} /></Link>

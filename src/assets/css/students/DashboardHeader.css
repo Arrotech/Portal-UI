@@ -67,10 +67,16 @@
 
 .dashboardHeader__right{
     display: flex;
-    flex: 0.3;
+    flex: 0.2;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+}
+
+@media(max-width:600px){
+    .dashboardHeader__notificationsIcon{
+        margin-right: 10px !important;
+    }
 }
 
 

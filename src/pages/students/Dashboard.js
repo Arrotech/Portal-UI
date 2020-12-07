@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DashboardHeader from '../../components/students/DashboardHeader'
+import DashboardSummary from '../../components/students/DashboardSummary';
+import '../../assets/css/students/Dashboard.css'
 
 function Dashboard() {
     return (
@@ -8,7 +10,9 @@ function Dashboard() {
             <Router>
                 <DashboardHeader />
                 <Switch>
-                    <Route path="/dashboard"></Route>
+                    <Route path="/dashboard">
+                        <DashboardSummary/>
+                    </Route>
                     <Route path="/examinations"></Route>
                     <Route path="/fees"></Route>
                 </Switch>
