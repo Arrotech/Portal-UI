@@ -27,10 +27,8 @@ function DashboardHeader() {
                     <SearchIcon className="dashboardHeader__searchIcon"/>
                 </div>
                 <div className="dashboardHeader__right">
-                    <NotificationsActiveIcon/>
-                    <AppsIcon/>
+                    <NotificationsActiveIcon className="dashboardHeader__notificationsIcon"/>
                     <PersonIcon/>
-                    <SettingsIcon/>
                 </div>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
