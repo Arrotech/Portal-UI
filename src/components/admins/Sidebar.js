@@ -16,7 +16,7 @@ function Sidebar() {
             <Link className="sidebar__links sidebar__header"><SidebarOption title="USERS" Icon={PeopleIcon} /></Link>
             <Link className="sidebar__links" to="/staff/register"><SidebarOption title="staff" Icon={PersonIcon} /></Link>
             <Link className="sidebar__links" to="/student/register"><SidebarOption title="students" Icon={SchoolIcon} /></Link>
-            <Link className="sidebar__links" to="/add-accountant"><SidebarOption title="accountants" Icon={PersonIcon} /></Link>
+            <Link className="sidebar__links" to="/accountant/register"><SidebarOption title="accountants" Icon={PersonIcon} /></Link>
             <Link className="sidebar__links" to="/manage-users"><SidebarOption title="Manage Users" Icon={EditIcon} /></Link><br />
             <Link className="sidebar__links sidebar__header"><SidebarOption title="SETTINGS" Icon={SettingsIcon} /></Link>
             <Link className="sidebar__links" to="/admin-account"><SidebarOption title="Account" Icon={PersonIcon} /></Link>
