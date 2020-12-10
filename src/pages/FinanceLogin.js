@@ -49,7 +49,7 @@ function FinanceLogin() {
             setLoading(false)
             setOpen(true);
             setUserSession(response.data.token, response.data.user)
-            history.push('/dashboard')
+            history.push('/finance-dashboard')
 
         }).catch(error => {
             setLoading(false)

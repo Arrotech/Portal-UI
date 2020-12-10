@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../assets/css/students/DashboardHeader.css'
+import '../../assets/css/accountants/DashboardHeader.css'
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
@@ -10,7 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import AppsIcon from '@material-ui/icons/Apps';
-import Sidebar from './Sidebar'
+import Sidebar from '../students/Sidebar'
 import { getUser, removeUserSession } from '../../Utils/Common'
 import Logo from '../../assets/img/ppic.jpg'
 
@@ -32,7 +32,7 @@ function DashboardHeader(props) {
 
     const handleLogout = () => {
         removeUserSession();
-        history.push('/student')
+        history.push('/finance')
     }
 
     return (
@@ -50,7 +50,7 @@ function DashboardHeader(props) {
                     <AppsIcon/>
                     <div className="dashboardHeader__userAccount">
                         <img src={Logo} alt="Profile Pic" />
-                        <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                        <Button className="dashboardHeader__username" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                             <ArrowDropDownIcon className="dashboardHeader__dropdownIcon" />
                         </Button>
                         <Menu
@@ -59,9 +59,7 @@ function DashboardHeader(props) {
                             keepMounted
                             open={Boolean(anchorEl)}
                             onClose={handleClose}
-                            className="dashboardHeader__menu"
                         >
-                            <MenuItem onClick={handleClose}>Signed in as <span className="dashboardHeader__username">{user.firstname}</span></MenuItem><hr/>
                             <MenuItem onClick={handleClose}>Profile</MenuItem>
                             <MenuItem onClick={handleClose}>My account</MenuItem>
                             <MenuItem onClick={handleLogout}>Logout</MenuItem>
