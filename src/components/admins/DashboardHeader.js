@@ -10,7 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import AppsIcon from '@material-ui/icons/Apps';
-import Sidebar from './Sidebar'
+import Sidebar from '../students/Sidebar'
 import { getUser, removeUserSession } from '../../Utils/Common'
 import Logo from '../../assets/img/ppic.jpg'
 
@@ -32,7 +32,7 @@ function DashboardHeader(props) {
 
     const handleLogout = () => {
         removeUserSession();
-        history.push('/student')
+        history.push('/staff')
     }
 
     return (

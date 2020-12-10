@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import StaffLogin from './pages/StaffLogin';
 import StudentLogin from './pages/StudentLogin';
 import FinanceLogin from './pages/FinanceLogin'
-import Dashboard from './pages/students/Dashboard'
+import StudentDashboard from './pages/students/Dashboard'
+import AdminDashboard from './pages/admins/Dashboard'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route path="/finance"><NavBar /><FinanceLogin /></Route>
           <Route path="/staff"><NavBar /><StaffLogin /></Route>
           <Route path="/student"><NavBar /><StudentLogin /></Route>
-          <Route path="/dashboard"><Dashboard /></Route>
+          <Route path="/student/dashboard"><StudentDashboard /></Route>
+          <Route path="/admin/dashboard"><AdminDashboard /></Route>
           <Route path="/"><NavBar /><StudentLogin /></Route>
         </Switch>
       </Router>
