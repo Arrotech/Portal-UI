@@ -116,6 +116,10 @@ span{
     color: #EEFBFB;
 }
 
+.login__snackbar{
+    background-color: #12232E !important;
+ }
+
 @media(max-width:600px){
     .studentLogin__left{
         display: none;
