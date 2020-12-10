@@ -79,11 +79,7 @@
     justify-content: space-between;
 }
 
-.dashboardHeader__menu {
-    font-size: 11px !important;
-}
-
-.dashboardHeader__userAccount>img {
+.dashboardHeader__userAccount>img{
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -94,13 +90,8 @@
     margin-left: 5px;
 }
 
-.dashboardHeader__dropdownIcon {
+.dashboardHeader__dropdownIcon{
     color: #EEFBFB !important;
-}
-
-.dashboardHeader__username {
-    color: #4DA8DA;
-    padding-left: 5px;
 }
 
 @media(max-width:600px) {

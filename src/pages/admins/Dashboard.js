@@ -2,6 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DashboardHeader from '../../components/admins/DashboardHeader'
 import '../../assets/css/admins/Dashboard.css'
+import DashboardSummary from '../../components/admins/DashboardSummary';
+import AddStaff from './AddStaff';
+import AddStudent from './AddStudent';
 
 function Dashboard() {
     return (
@@ -10,9 +13,10 @@ function Dashboard() {
                 <DashboardHeader />
                 <Switch>
                     <Route path="/admin/dashboard">
-                        <h1>Admin Dashboard</h1>
+                        <DashboardSummary/>
                     </Route>
-                    <Route path="/student/register"></Route>
+                    <Route path="/staff/register"><AddStaff/></Route>
+                    <Route path="/student/register"><AddStudent/></Route>
                     <Route path="/accountant/register"></Route>
                 </Switch>
             </Router>

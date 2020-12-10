@@ -10,7 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import AppsIcon from '@material-ui/icons/Apps';
-import Sidebar from '../students/Sidebar'
+import Sidebar from '../admins/Sidebar'
 import { getUser, removeUserSession } from '../../Utils/Common'
 import Logo from '../../assets/img/ppic.jpg'
 
@@ -47,7 +47,7 @@ function DashboardHeader(props) {
                 </div>
                 <div className="dashboardHeader__right">
                     <NotificationsActiveIcon className="dashboardHeader__notificationsIcon" />
-                    <AppsIcon/>
+                    <AppsIcon />
                     <div className="dashboardHeader__userAccount">
                         <img src={Logo} alt="Profile Pic" />
                         <Button className="dashboardHeader__username" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
@@ -60,6 +60,7 @@ function DashboardHeader(props) {
                             open={Boolean(anchorEl)}
                             onClose={handleClose}
                         >
+                            <MenuItem onClick={handleClose}>Signed in as <span className="dashboardHeader__username">{user.firstname}</span></MenuItem><hr />
                             <MenuItem onClick={handleClose}>Profile</MenuItem>
                             <MenuItem onClick={handleClose}>My account</MenuItem>
                             <MenuItem onClick={handleLogout}>Logout</MenuItem>

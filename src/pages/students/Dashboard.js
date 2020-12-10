@@ -10,7 +10,7 @@ function Dashboard() {
             <Router>
                 <DashboardHeader />
                 <Switch>
-                    <Route path="/student/dashboard">
+                    <Route path="/dashboard">
                         <DashboardSummary/>
                     </Route>
                     <Route path="/examinations"></Route>
