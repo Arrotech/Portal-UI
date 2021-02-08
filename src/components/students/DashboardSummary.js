@@ -11,13 +11,14 @@ import DoughnutGraph from './DoughnutGraph';
 import NotificationsTable from './NotificationsTable';
 import LatestFees from './LatestFees'
 import { FeeDeviation } from './LatestFees'
-import { Aggregate } from './Examinations'
+import { Aggregate, Supplementaries } from './Examinations'
 import { TotalRegisteredUnits } from './RegisteredUnits'
 
 function DashboardSummary() {
     const feeDeviation = FeeDeviation()
     const totalUnits = TotalRegisteredUnits()
     const aggregate = Aggregate()
+    const supplementaries = Supplementaries()
     console.log(aggregate)
     return (
         <div className="dashboard__summary">
@@ -47,7 +48,7 @@ function DashboardSummary() {
                     <InfoBoxOption className="dashboardSummary__infoBox"
                         title="SUPPLEMENTARIES"
                         Icon={SmsFailedIcon}
-                        value="2"
+                        value={supplementaries}
                         deviation="+1"
                         text="Since last semester" />
                 </div>
