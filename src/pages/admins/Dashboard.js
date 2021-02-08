@@ -6,6 +6,7 @@ import DashboardSummary from '../../components/admins/DashboardSummary';
 import AddStaff from './AddStaff';
 import AddStudent from './AddStudent';
 import AddAccountant from './AddAccountant';
+import GetStudents from '../../components/admins/GetStudents';
 
 function Dashboard() {
     return (
@@ -19,6 +20,7 @@ function Dashboard() {
                     <Route path="/staff/register"><AddStaff/></Route>
                     <Route path="/student/register"><AddStudent/></Route>
                     <Route path="/accountant/register"><AddAccountant/></Route>
+                    <Route path="/manage/users"><GetStudents/></Route>
                 </Switch>
             </Router>
         </div>

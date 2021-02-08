@@ -1,0 +1,30 @@
+.studentsTable{
+    padding: 20px;
+}
+.studentsTable>table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 11px;
+    height: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    color: #EEFBFB;
+}
+
+tr:nth-child(even) {
+    background-color: #12232E;
+    color: #12232E;
+}
+
+.studentsTable__deleteIcon {
+    color: red !important;
+    font-size: 18px !important;
+}
+
+.studentsTable__editIcon {
+    color: blue !important;
+    font-size: 18px !important
+}

@@ -9,8 +9,16 @@ import RankTable from './RankTable';
 import LineGraph from './LineGraph';
 import DoughnutGraph from './DoughnutGraph';
 import NotificationsTable from './NotificationsTable';
+import LatestFees from './LatestFees'
+import { FeeDeviation } from './LatestFees'
+import { Aggregate } from './Examinations'
+import { TotalRegisteredUnits } from './RegisteredUnits'
 
 function DashboardSummary() {
+    const feeDeviation = FeeDeviation()
+    const totalUnits = TotalRegisteredUnits()
+    const aggregate = Aggregate()
+    console.log(aggregate)
     return (
         <div className="dashboard__summary">
             <div className="dashboardSummary__left">
@@ -21,19 +29,19 @@ function DashboardSummary() {
                     <InfoBoxOption className="dashboardSummary__infoBox"
                         title="AGGREGATE POINTS"
                         Icon={MenuBookIcon}
-                        value="72"
+                        value={aggregate}
                         deviation="^10%"
                         text="Since last semester" />
                     <InfoBoxOption className="dashboardSummary__infoBox"
                         title="FEE"
                         Icon={MonetizationOnIcon}
-                        value="25,450"
-                        deviation="+250"
+                        value={<LatestFees />}
+                        deviation={feeDeviation}
                         text="Fee balance" />
                     <InfoBoxOption className="dashboardSummary__infoBox"
                         title="REGISTERED UNITS"
                         Icon={LibraryBooksIcon}
-                        value="31"
+                        value={totalUnits}
                         deviation="+6"
                         text="Since last semester" />
                     <InfoBoxOption className="dashboardSummary__infoBox"
@@ -59,7 +67,7 @@ function DashboardSummary() {
                     </div>
                     <div className="dashboardSummary__notifications">
                         <p>Latest Notifications</p>
-                        <NotificationsTable/>
+                        <NotificationsTable />
                     </div>
                 </div>
             </div>
