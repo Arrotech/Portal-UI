@@ -11,7 +11,7 @@ th, td {
     color: #EEFBFB;
 }
 
-.notificationsTable__status{
+.notificationsTable__status {
     color: yellow;
 }
 
@@ -20,6 +20,6 @@ th, td {
     color: #12232E;
 }
 
-.notificationsTable__sender{
+.notificationsTable__sender {
     color: #4DA8DA;
 }
