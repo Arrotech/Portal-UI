@@ -26,7 +26,7 @@ import '../../assets/css/students/Sidebar.css'
 function Sidebar() {
     return (
         <div className="sidebar">
-            <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="EXAMINATIONS" Icon={MenuBookIcon} /></Link>
+            <Link className="sidebar__links sidebar__header" to="/dashboard"><SidebarOption title="EXAMINATIONS" Icon={MenuBookIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="View Results" Icon={LibraryBooksIcon} /></Link>
             <Link className="sidebar__links" to="/exams"><SidebarOption title="Supplementary" Icon={SmsFailedIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/fees"><SidebarOption title="FEES" Icon={CreditCardIcon} /></Link>
@@ -35,16 +35,12 @@ function Sidebar() {
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="UNITS" Icon={SubjectIcon} /></Link>
             <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link><br/><br/>
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="ACTIVITY" Icon={LocalActivityIcon} /></Link>
-            <Link className="sidebar__links" to="/fees"><SidebarOption title="Checklist" Icon={ListIcon} /></Link>
+            <Link className="sidebar__links" to="/checklist"><SidebarOption title="Checklist" Icon={ListIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Evaluation" Icon={PlaylistAddCheckIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Graduation" Icon={SchoolIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="CO-CURRICULUM" Icon={LocalActivityIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Sports" Icon={SportsSoccerIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Societies" Icon={PeopleIcon} /></Link><br/>
-            <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="SETTINGS" Icon={SettingsIcon} /></Link>
-            <Link className="sidebar__links" to="/fees"><SidebarOption title="Account" Icon={PersonIcon} /></Link>
-            <Link className="sidebar__links" to="/fees"><SidebarOption title="Preferences" Icon={CardTravelIcon} /></Link>
-            <Link className="sidebar__links" to="/fees"><SidebarOption title="Notifications" Icon={NotificationsActiveIcon} /></Link>
         </div>
     )
 }

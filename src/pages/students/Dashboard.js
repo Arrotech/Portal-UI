@@ -4,6 +4,7 @@ import DashboardHeader from '../../components/students/DashboardHeader'
 import DashboardSummary from '../../components/students/DashboardSummary';
 import '../../assets/css/students/Dashboard.css'
 import { UnitsRegistration } from './UnitsRegistration';
+import { Checklist } from './Checklist';
 
 function Dashboard() {
     return (
@@ -15,7 +16,7 @@ function Dashboard() {
                         <DashboardSummary/>
                     </Route>
                     <Route path="/units-registration"><UnitsRegistration/></Route>
-                    <Route path="/fees"></Route>
+                    <Route path="/checklist"><Checklist/></Route>
                 </Switch>
             </Router>
         </div>

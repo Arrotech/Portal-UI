@@ -1,87 +1,101 @@
-.unitsRegistration{
+.checklist {
     background-color: #12232E;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
 }
-.unitsRegistration__header{
+
+.checklist__header {
     display: flex;
     align-items: center;
     padding: 6px;
     color: #EEFBFB;
     margin-bottom: 10px;
 }
-.unitsRegistration__headerIcon{
+
+.checklist__headerIcon {
     font-size: 30px !important;
     color: yellow;
 }
-.unitsRegistration__header>h3{
+
+.checklist__header>h3 {
     margin-left: 10px;
     color: #EEFBFB !important;
 }
-.unitsRegistration__form{
+
+.checklist__form {
     display: flex;
     flex-direction: column;
     padding: 10px;
     color: #EEFBFB;
 }
-.unitsRegistration__form>label{
+
+.checklist__courseInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checklist__form>h4{
     margin-bottom: 5px;
 }
-.unitsRegistration__form>p{
-    margin-bottom: 10px;
+
+.checklist__form>p{
     font-style: italic;
     font-size: 11px;
+    margin-bottom: 20px;
 }
 
-.unitsRegistration__form>input{
+.checklist__otherInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 20px;
-    max-width: 100%;
-    height: 30px;
-    border: none;
+}
+
+.checklist__formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist__formGroup>label {
+    margin-bottom: 10px;
+}
+
+.checklist__formGroup>select {
+    margin-bottom: 20px;
+    width: 300px !important;
+    height: 40px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    padding: 6px;
 }
 
-.unitsRegistration__form>select{
-    margin-bottom: 20px;
-    max-width: 210px;
-    height: 30px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+.checklist__form>hr{
     margin-bottom: 40px;
 }
 
-.unitsRegistration__btn{
+.checklist__btn {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.unitsRegistration__left{
+.checklist__left {
     flex: 0.8;
 }
 
-.unitsRegistration__right{
+.checklist__right {
     display: flex;
     flex: 0.2;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.unitsRegistration__form>hr{
-    margin-bottom: 40px;
-}
-
-.unitsRegistration__btnSave{
+.checklist__btnSave {
     background-color: #4DA8DA;
     width: 100px;
     height: 30px;
@@ -90,7 +104,7 @@
     border-radius: 3px;
 }
 
-.unitsRegistration__btnCancel{
+.checklist__btnCancel {
     background-color: yellow;
     width: 100px;
     height: 30px;
@@ -99,8 +113,20 @@
     border-radius: 3px;
 }
 
-@media(max-width:990px){
-    .unitsRegistration__btnSave{
+@media(max-width:990px) {
+    .checklist__btnSave {
         margin-left: 10px;
+    }
+    .checklist__courseInfo{
+        flex-direction: column;
+    }
+    .checklist__otherInfo{
+        flex-direction: column;
+    }
+    .checklist__left{
+        flex: 0;
+    }
+    .checklist__right{
+        flex: 0.2;
     }
 }
