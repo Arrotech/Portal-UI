@@ -33,7 +33,7 @@ function Sidebar() {
             <Link className="sidebar__links" to="/exams"><SidebarOption title="Fee Statement" Icon={MonetizationOnIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Fee Structure" Icon={LocalAtmIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="UNITS" Icon={SubjectIcon} /></Link>
-            <Link className="sidebar__links" to="/fees"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link><br/><br/>
+            <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link><br/><br/>
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="ACTIVITY" Icon={LocalActivityIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Checklist" Icon={ListIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Evaluation" Icon={PlaylistAddCheckIcon} /></Link>

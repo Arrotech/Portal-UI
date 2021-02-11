@@ -95,7 +95,10 @@
 
 @media(max-width:1250px){
     .dashboardSummary__left{
-        flex: none;
+        width: 0;
+    }
+    .dashboardSummary__right{
+        width: 100%;
     }
     .dashboardSummary__firstRow{
         flex-direction: column;
