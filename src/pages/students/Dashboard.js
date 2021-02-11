@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DashboardHeader from '../../components/students/DashboardHeader'
 import DashboardSummary from '../../components/students/DashboardSummary';
 import '../../assets/css/students/Dashboard.css'
+import { UnitsRegistration } from './UnitsRegistration';
 
 function Dashboard() {
     return (
@@ -13,7 +14,7 @@ function Dashboard() {
                     <Route path="/dashboard">
                         <DashboardSummary/>
                     </Route>
-                    <Route path="/examinations"></Route>
+                    <Route path="/units-registration"><UnitsRegistration/></Route>
                     <Route path="/fees"></Route>
                 </Switch>
             </Router>
