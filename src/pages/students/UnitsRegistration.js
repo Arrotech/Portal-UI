@@ -21,7 +21,13 @@ export const UnitsRegistration = () => {
                     <option value="opel">SEM III 2014-2015</option>
                     <option value="audi">SEM I 2015-2016</option>
                 </select>
-                <button className="unitsRegistration__btn">Save</button>
+                <div className="unitsRegistration__btn">
+                    <div className="unitsRegistration__left"></div>
+                    <div className="unitsRegistration__right">
+                        <button className="unitsRegistration__btnCancel">Cancel</button>
+                        <button className="unitsRegistration__btnSave">Save</button>
+                    </div>
+                </div>
             </div>
         </div>
     )

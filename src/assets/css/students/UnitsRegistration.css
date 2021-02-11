@@ -2,13 +2,14 @@
     background-color: #12232E;
     padding: 20px;
     margin: 5px;
+    border-radius: 5px;
 }
 .unitsRegistration__header{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 6px;
     color: #EEFBFB;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .unitsRegistration__headerIcon{
     font-size: 30px !important;
@@ -16,7 +17,7 @@
 }
 .unitsRegistration__header>h3{
     margin-left: 10px;
-    color: #4DA8DA !important;
+    color: #EEFBFB !important;
 }
 .unitsRegistration__form{
     display: flex;
@@ -48,4 +49,46 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+.unitsRegistration__btn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.unitsRegistration__left{
+    flex: 0.8;
+}
+
+.unitsRegistration__right{
+    display: flex;
+    flex: 0.2;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.unitsRegistration__btnSave{
+    background-color: #4DA8DA;
+    width: 100px;
+    height: 30px;
+    color: #12232E;
+    border: none;
+    border-radius: 3px;
+}
+
+.unitsRegistration__btnCancel{
+    background-color: yellow;
+    width: 100px;
+    height: 30px;
+    color: #12232E;
+    border: none;
+    border-radius: 3px;
+}
+
+@media(max-width:990px){
+    .unitsRegistration__btnSave{
+        margin-left: 10px;
+    }
 }
