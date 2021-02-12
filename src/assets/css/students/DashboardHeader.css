@@ -5,10 +5,12 @@
     background-color: #12232E;
     font-size: 11px;
     color: #EEFBFB;
+    padding: 10px;
 }
 
 .dashboardHeader__left {
     display: flex;
+    flex: 0.4;
     align-items: center;
 }
 
@@ -37,10 +39,19 @@
     position: absolute;
 }
 
-/* --------------------- Dashboard Header Center ---------------- */
+/* --------------------- Dashboard Header Right ------------------- */
 
-.dashboardHeader__center {
+.dashboardHeader__rightHeader {
     display: flex;
+    flex: 0.4;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.dashboardHeader__Search {
+    display: flex;
+    /* flex: 0.2; */
     align-items: center;
     background-color: #EEFBFB;
     border-radius: 5px;
@@ -52,25 +63,16 @@
     background-color: #EEFBFB !important;
 }
 
-.dashboardHeader__center>input {
+.dashboardHeader__Search>input {
     border: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     background-color: #EEFBFB;
+    width: 205px;
 }
 
-.dashboardHeader__center>input:focus {
+.dashboardHeader__Search>input:focus {
     outline: none;
-}
-
-/* --------------------- Dashboard Header Right ------------------- */
-
-.dashboardHeader__right {
-    display: flex;
-    flex: 0.2;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
 }
 
 .dashboardHeader__userAccount {
@@ -108,31 +110,3 @@
         margin-right: 10px !important;
     }
 }
-
-/* @media(max-width:600px){
-
-    .dashboardHeader__menuIcon{
-        color: #EEFBFB;
-    }
-
-    .nav-menu{
-        background-color: #12232E;
-        width: 200px;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: -100%;
-        transition: 850ms;
-        padding-top: 20px;
-    }
-
-    .dashboardHeader__close{
-        color: #EEFBFB !important;
-    }
-
-    .nav-menu.active{
-        left: 0;
-        transition: 350ms;
-        position: absolute;
-    }
-} */

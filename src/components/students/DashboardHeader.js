@@ -41,13 +41,13 @@ function DashboardHeader(props) {
                 <div className="dashboardHeader__left">
                     <Link className="dashboardHeader__menuIcon" to="#"><MenuIcon onClick={showSidebar} /></Link>
                 </div>
-                <div className="dashboardHeader__center">
-                    {/* <input type="text" placeholder="Search..." />
-                    <SearchIcon className="dashboardHeader__searchIcon" /> */}
-                </div>
-                <div className="dashboardHeader__right">
+                <div className="dashboardHeader__rightHeader">
+                    <div className="dashboardHeader__Search">
+                        <input type="text" placeholder="Search" />
+                        <SearchIcon className="dashboardHeader__searchIcon" />
+                    </div>
                     <NotificationsActiveIcon className="dashboardHeader__notificationsIcon" />
-                    <AppsIcon/>
+                    <AppsIcon />
                     <div className="dashboardHeader__userAccount">
                         <img src={Logo} alt="Profile Pic" />
                         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
@@ -61,12 +61,9 @@ function DashboardHeader(props) {
                             onClose={handleClose}
                             className="dashboardHeader__menu"
                         >
-                            <MenuItem onClick={handleClose}>Signed in as <span className="dashboardHeader__username">{user.firstname}</span></MenuItem><hr/>
+                            <MenuItem onClick={handleClose}>Signed in as <span className="dashboardHeader__username">{user.firstname}</span></MenuItem><hr />
                             <MenuItem onClick={handleClose}>Profile</MenuItem>
-                            <MenuItem onClick={handleClose}>Account</MenuItem>
-                            <MenuItem onClick={handleClose}>Preferences</MenuItem>
-                            <MenuItem onClick={handleClose}>Notifications Settings</MenuItem>
-                            <hr/>
+                            <MenuItem onClick={handleClose}>My account</MenuItem>
                             <MenuItem onClick={handleLogout}>Logout</MenuItem>
                         </Menu>
                     </div>
