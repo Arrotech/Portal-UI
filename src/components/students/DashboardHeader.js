@@ -43,7 +43,7 @@ function DashboardHeader(props) {
                 </div>
                 <div className="dashboardHeader__rightHeader">
                     <div className="dashboardHeader__Search">
-                        <input type="text" placeholder="Search" />
+                        <input type="text" placeholder="Search..." />
                         <SearchIcon className="dashboardHeader__searchIcon" />
                     </div>
                     <NotificationsActiveIcon className="dashboardHeader__notificationsIcon" />
@@ -62,8 +62,10 @@ function DashboardHeader(props) {
                             className="dashboardHeader__menu"
                         >
                             <MenuItem onClick={handleClose}>Signed in as <span className="dashboardHeader__username">{user.firstname}</span></MenuItem><hr />
-                            <MenuItem onClick={handleClose}>Profile</MenuItem>
-                            <MenuItem onClick={handleClose}>My account</MenuItem>
+                            <Link className="sidebar__specialLinks" to="/profile"><MenuItem onClick={handleClose}>Profile</MenuItem></Link>
+                            <Link className="sidebar__specialLinks" to="/preferences"><MenuItem onClick={handleClose}>Preferences</MenuItem></Link>
+                            <Link className="sidebar__specialLinks" to="/notifications-settings"><MenuItem onClick={handleClose}>Notifications Settings</MenuItem></Link>
+                            <hr/>
                             <MenuItem onClick={handleLogout}>Logout</MenuItem>
                         </Menu>
                     </div>

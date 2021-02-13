@@ -27,10 +27,10 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <Link className="sidebar__links sidebar__header" to="/dashboard"><SidebarOption title="EXAMINATIONS" Icon={MenuBookIcon} /></Link>
-            <Link className="sidebar__links" to="/fees"><SidebarOption title="View Results" Icon={LibraryBooksIcon} /></Link>
+            <Link className="sidebar__links" to="/view-results"><SidebarOption title="View Results" Icon={LibraryBooksIcon} /></Link>
             <Link className="sidebar__links" to="/exams"><SidebarOption title="Supplementary" Icon={SmsFailedIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/fees"><SidebarOption title="FEES" Icon={CreditCardIcon} /></Link>
-            <Link className="sidebar__links" to="/exams"><SidebarOption title="Fee Statement" Icon={MonetizationOnIcon} /></Link>
+            <Link className="sidebar__links" to="/fee-statement"><SidebarOption title="Fee Statement" Icon={MonetizationOnIcon} /></Link>
             <Link className="sidebar__links" to="/fees"><SidebarOption title="Fee Structure" Icon={LocalAtmIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/exams"><SidebarOption title="UNITS" Icon={SubjectIcon} /></Link>
             <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link><br/><br/>
