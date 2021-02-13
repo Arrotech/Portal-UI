@@ -1,0 +1,114 @@
+.feeStatement {
+    margin: 20px;
+}
+
+.feeStatement__header{
+    display: flex;
+    align-items: center;
+    color: #EEFBFB;
+    margin-bottom: 20px;
+}
+
+.feeStatement__header>h3{
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.feeStatement__headerIcon {
+    font-size: 30px !important;
+    color: yellow;
+}
+
+.feeStatement__formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.feeStatement__formGroup>p {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.feeStatement__formGroup>select {
+    margin-bottom: 20px;
+    width: 300px !important;
+    height: 40px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 11px;
+    height: 100%;
+    background-color: #12232E;
+    border: 4px solid #12232E;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 6px #12232E;
+    -webkit-box-shadow: 0 0 6px #12232E;
+    box-shadow: 0 0 6px #12232E;
+}
+
+th{
+    text-align: left;
+    padding: 8px;
+    color: yellow !important;
+    font-weight: 800;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    color: #EEFBFB;
+}
+
+.feeStatement__table>tr:nth-child(even) {
+    background-color: #203647;
+    color: #12232E;
+}
+
+.feeStatement__balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #12232E;
+    border: 4px solid #203647;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 6px #12232E;
+    -webkit-box-shadow: 0 0 6px #12232E;
+    box-shadow: 0 0 6px #12232E;
+}
+
+.feeStatement__balanceLeft{
+    flex: 0.8;
+}
+
+.feeStatement__balanceRight{
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+}
+
+.feeStatement__balanceRight>p{
+    color: #EEFBFB;
+    font-size: 24px;
+}
+
+.feeStatement__balanceRight>h4{
+    color: yellow;
+    font-size: 24px;
+}
+
+@media(max-width:990px){
+    .feeStatement__balanceRight>h4{
+        margin-left: 10px;
+    }
+}

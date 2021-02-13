@@ -14,3 +14,8 @@
     font-size: 14px !important;
     color: #007CC7;
 }
+
+.sidebar__specialLinks{
+    text-decoration: none;
+    color: #12232E;
+}
