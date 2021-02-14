@@ -27,7 +27,7 @@ export const Aggregate = () => {
     }, []);
     return (
         <div>
-            <p>{aggregate.aggregate}</p>
+            <p>{aggregate ? aggregate.aggregate: 0}</p>
         </div>
     )
 }
