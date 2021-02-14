@@ -1,6 +1,6 @@
 .profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #12232E;
     color: #EEFBFB;
     margin: 10px;
@@ -13,15 +13,23 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    max-width: 700px;
+    margin: 20px auto;
 }
 
 .profile__left {
-    flex: 0.3;
+    flex: 0.4;
 }
 
-.profile__left>img {
-    width: 300px;
-    height: 300px;
+.profile__leftImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__leftImage>img {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -30,8 +38,37 @@
     -o-border-radius: 50%;
 }
 
+.profile__edit{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #EEFBFB;
+    border: none;
+    margin-top: -32px;
+    min-width: 100px;
+    padding: 8px;
+    border-radius: 50%;
+    /* border-bottom-left-radius: 150%;
+    border-bottom-right-radius: 150%; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.profile__edit:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.profile__editIcon{
+    font-size: 14px !important;
+    margin-bottom: -2px !important;
+    margin-left: 2px !important;
+}
+
 .profile__right {
-    flex: 0.7;
+    flex: 0.6;
     padding: 10px;
 }
 
@@ -39,8 +76,42 @@
     margin-bottom: 20px;
 }
 
+.profile__rightName{
+    color: #4DA8DA;
+}
+
+.profile__right>h4{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.profile__rightCourse{
+    color: yellow;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.profile__rightPersonalInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.profile__rightInfoLeft>p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.profile__rightInfoRight>p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
 @media(max-width:990px){
     .profile{
         flex-direction: column;
+        margin: 20px;
     }
 }
