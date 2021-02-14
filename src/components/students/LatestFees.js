@@ -26,7 +26,7 @@ function LatestFees() {
     }, []);
     return (
         <div>
-            <p>{latest_fee ? latest_fee.amount: 0}</p>
+            <p>{latest_fee ? latest_fee.amount : 0}</p>
         </div>
     )
 }
@@ -61,7 +61,5 @@ export const FeeDeviation = () => {
         </div>
     )
 }
-
-
 
 export default LatestFees
