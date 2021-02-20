@@ -10,7 +10,7 @@ function LatestFees() {
 
     useEffect(() => {
         const getLatestFee = async () => {
-            await fetch('http://localhost:5000/api/v1/fees/latest/' + admission, {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/fees/latest/' + admission, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,
@@ -40,7 +40,7 @@ export const FeeDeviation = () => {
 
     useEffect(() => {
         const getFeeDeviation = async () => {
-            await fetch('http://localhost:5000/api/v1/fees/balance/' + admission, {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/fees/balance/' + admission, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,

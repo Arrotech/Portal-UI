@@ -14,7 +14,7 @@ export const FeeStatement = () => {
 
     useEffect(() => {
         const getFeeStatement = async () => {
-            await fetch('http://localhost:5000/api/v1/fees/' + admission, {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/fees/' + admission, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,

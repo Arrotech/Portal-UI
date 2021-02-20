@@ -10,7 +10,7 @@ export const TotalRegisteredUnits = () => {
 
     useEffect(() => {
         const getTotalRegisteredUnits = async () => {
-            await fetch('http://localhost:5000/api/v1/subjects/total/' + admission, {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/subjects/total/' + admission, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,

@@ -10,7 +10,7 @@ export const Aggregate = () => {
 
     useEffect(() => {
         const getAggregate = async () => {
-            await fetch('http://localhost:5000/api/v1/exams/aggregate/' + admission + '/' + '2014-2015', {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/exams/aggregate/' + admission + '/' + '2014-2015', {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,
@@ -40,7 +40,7 @@ export const Supplementaries = () => {
 
     useEffect(() => {
         const getSupplementaries = async () => {
-            await fetch('http://localhost:5000/api/v1/exams/supplementaries/year/' + admission + '/' + '2014-2015', {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/exams/supplementaries/year/' + admission + '/' + '2014-2015', {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,
