@@ -41,7 +41,7 @@ function StudentLogin() {
     const handleLogin = () => {
         setError(null)
         setLoading(true)
-        axios.post('http://127.0.0.1:5000/api/v1/students/login',
+        axios.post('https://njc-school-portal.herokuapp.com/api/v1/students/login',
             {
                 email: email.value,
                 password: password.value

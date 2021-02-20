@@ -8,7 +8,7 @@ function RankTable() {
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Points</th>
+                    <th>Results</th>
                 </tr>
                 <tr>
                     <td>Peter</td>

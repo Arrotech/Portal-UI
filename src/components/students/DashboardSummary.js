@@ -22,9 +22,6 @@ function DashboardSummary() {
     console.log(aggregate)
     return (
         <div className="dashboard__summary">
-            <div className="dashboardSummary__left">
-
-            </div>
             <div className="dashboardSummary__right">
                 <div className="dashboardSummary__firstRow">
                     <InfoBoxOption className="dashboardSummary__infoBox"
@@ -53,22 +50,22 @@ function DashboardSummary() {
                         text="Since last semester" />
                 </div>
                 <div className="dashboardSummary__secondRow">
+                    <div className="dashboardSummary__table">
+                        <h1>Overall Ranking</h1>
+                        <RankTable/>
+                    </div>
                     <div className="dashboardSummary__graph">
                         <h1>Overall Exams Score</h1>
                         <LineGraph />
                     </div>
-                    <div className="dashboardSummary__table">
-                        <h1>Overall Ranking</h1>
-                        <RankTable />
-                    </div>
                 </div>
                 <div className="dashboardSummary__thirdRow">
-                    <div className="dashboardSummary__doughnut">
-                        <DoughnutGraph />
-                    </div>
                     <div className="dashboardSummary__notifications">
                         <p>Latest Notifications</p>
                         <NotificationsTable />
+                    </div>
+                    <div className="dashboardSummary__doughnut">
+                        <DoughnutGraph />
                     </div>
                 </div>
             </div>

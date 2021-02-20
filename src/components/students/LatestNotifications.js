@@ -8,7 +8,7 @@ function LatestNotifications() {
 
     useEffect(() => {
         const getLatestNotifications = async () => {
-            await fetch('http://127.0.0.1:5000/api/v1/notifications/latest', {
+            await fetch('https://njc-school-portal.herokuapp.com/api/v1/notifications/latest', {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer " + token,

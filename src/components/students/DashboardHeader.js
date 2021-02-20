@@ -49,7 +49,7 @@ function DashboardHeader(props) {
                     <NotificationsActiveIcon className="dashboardHeader__notificationsIcon" />
                     <AppsIcon />
                     <div className="dashboardHeader__userAccount">
-                        <img src={Logo} alt="Profile Pic" />
+                        <p>{user.firstname}</p>
                         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                             <ArrowDropDownIcon className="dashboardHeader__dropdownIcon" />
                         </Button>
@@ -63,9 +63,6 @@ function DashboardHeader(props) {
                         >
                             <MenuItem onClick={handleClose}>Signed in as <span className="dashboardHeader__username">{user.firstname}</span></MenuItem><hr />
                             <Link className="sidebar__specialLinks" to="/profile"><MenuItem onClick={handleClose}>Profile</MenuItem></Link>
-                            <Link className="sidebar__specialLinks" to="/preferences"><MenuItem onClick={handleClose}>Preferences</MenuItem></Link>
-                            <Link className="sidebar__specialLinks" to="/notifications-settings"><MenuItem onClick={handleClose}>Notifications Settings</MenuItem></Link>
-                            <hr/>
                             <MenuItem onClick={handleLogout}>Logout</MenuItem>
                         </Menu>
                     </div>

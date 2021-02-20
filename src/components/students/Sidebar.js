@@ -29,16 +29,17 @@ function Sidebar() {
             <Link className="sidebar__links sidebar__header" to="/fee-statement"><SidebarOption title="FEES" Icon={CreditCardIcon} /></Link>
             <Link className="sidebar__links" to="/fee-statement"><SidebarOption title="Fee Statement" Icon={MonetizationOnIcon} /></Link>
             <Link className="disabled-link" to="/fees"><SidebarOption title="Fee Structure" Icon={LocalAtmIcon} /></Link><br/>
-            <Link className="sidebar__links sidebar__header" to="/units-registration"><SidebarOption title="UNITS" Icon={SubjectIcon} /></Link>
-            <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link><br/><br/>
             <Link className="sidebar__links sidebar__header" to="/checklist"><SidebarOption title="ACTIVITY" Icon={LocalActivityIcon} /></Link>
+            <Link className="disabled-link" to="/view-units"><SidebarOption title="Units" Icon={ListIcon} /></Link>
+            <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link>
             <Link className="sidebar__links" to="/checklist"><SidebarOption title="Checklist" Icon={PlaylistAddCheckIcon} /></Link>
+            <Link className="disabled-link" to="/library"><SidebarOption title="Library" Icon={LibraryBooksIcon} /></Link>
             <Link className="disabled-link" to="/hostel"><SidebarOption title="Book Hostel" Icon={HomeIcon} /></Link>
-            <Link className="disabled-link" to="/fees"><SidebarOption title="Evaluation" Icon={ListIcon} /></Link>
-            <Link className="disabled-link" to="/fees"><SidebarOption title="Graduation" Icon={SchoolIcon} /></Link><br/>
+            <Link className="disabled-link" to="/evaluation"><SidebarOption title="Evaluation" Icon={ListIcon} /></Link>
+            <Link className="disabled-link" to="/graduation"><SidebarOption title="Graduation" Icon={SchoolIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/dashboard"><SidebarOption title="CO-CURRICULUM" Icon={LocalActivityIcon} /></Link>
-            <Link className="disabled-link" to="/fees"><SidebarOption title="Sports" Icon={SportsSoccerIcon} /></Link>
-            <Link className="disabled-link" to="/fees"><SidebarOption title="Societies" Icon={PeopleIcon} /></Link><br/>
+            <Link className="disabled-link" to="/sports"><SidebarOption title="Sports" Icon={SportsSoccerIcon} /></Link>
+            <Link className="disabled-link" to="/societies"><SidebarOption title="Societies" Icon={PeopleIcon} /></Link><br/>
         </div>
     )
 }

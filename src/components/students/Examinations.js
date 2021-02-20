@@ -20,14 +20,13 @@ export const Aggregate = () => {
                 .then((data) => {
                     const aggregate = data.data;
                     setAggregate(aggregate)
-                    console.log(aggregate)
                 });
         };
         getAggregate();
     }, []);
     return (
         <div>
-            <p>{aggregate ? aggregate.aggregate: 0}</p>
+            <p>{aggregate ? Number(aggregate.aggregate).toFixed(2) : 0.00}</p>
         </div>
     )
 }

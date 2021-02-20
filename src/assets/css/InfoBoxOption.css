@@ -1,12 +1,12 @@
 .infoBoxOption{
-    min-width: 230px;
+    min-width: 270px;
     background-color: #12232E;
     border-radius: 5px;
     -moz-box-shadow: 0 0 3px #12232E;
     -webkit-box-shadow: 0 0 3px #12232E;
     box-shadow: 0 0 3px #12232E;
     font-size: 11px;
-    padding: 5px;
+    padding: 10px;
     color: #EEFBFB;
 }
 .infoBoxOption__header{

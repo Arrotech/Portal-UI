@@ -10,7 +10,7 @@ export default class LineGraph extends Component {
         const options = {
             backgroundColor: "#12232E",
             animationEnabled: true,
-            width: 450,
+            width: 440,
             height: 250,
             title: {
                 text: "semester 1 vs semester 2",

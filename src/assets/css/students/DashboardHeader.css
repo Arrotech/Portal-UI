@@ -26,7 +26,7 @@
     top: 0;
     left: -100%;
     transition: 850ms;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .dashboardHeader__close {
@@ -85,15 +85,9 @@
     font-size: 11px !important;
 }
 
-.dashboardHeader__userAccount>img {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    margin-left: 5px;
+.dashboardHeader__userAccount>p {
+    font-size: 12px;
+    margin-right: -16px;
 }
 
 .dashboardHeader__dropdownIcon {
@@ -105,11 +99,15 @@
     padding-left: 5px;
 }
 
-@media(max-width:600px) {
+@media(max-width:990px) {
     .dashboardHeader__notificationsIcon {
         margin-right: 10px !important;
     }
     .dashboardHeader__Search{
         margin-right: 10px;
+    }
+    .dashboardHeader__userAccount>p{
+        margin-left: 8px;
+        margin-right: -20px;
     }
 }
