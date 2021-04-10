@@ -8,6 +8,8 @@ import { Checklist } from './Checklist';
 import { ViewResults } from './ViewResults';
 import { FeeStatement } from './FeeStatement';
 import { Profile } from './Profile';
+import { ViewUnits } from './ViewUnits';
+import { ViewsAllStreams } from './ViewStreams';
 
 function Dashboard() {
     return (
@@ -16,13 +18,15 @@ function Dashboard() {
                 <DashboardHeader />
                 <Switch>
                     <Route path="/dashboard">
-                        <DashboardSummary/>
+                        <DashboardSummary />
                     </Route>
-                    <Route path="/view-results"><ViewResults/></Route>
-                    <Route path="/fee-statement"><FeeStatement/></Route>
-                    <Route path="/units-registration"><UnitsRegistration/></Route>
-                    <Route path="/checklist"><Checklist/></Route>
-                    <Route path="/profile"><Profile/></Route>
+                    <Route path="/view-results"><ViewResults /></Route>
+                    <Route path="/fee-statement"><FeeStatement /></Route>
+                    <Route path="/view-units"><ViewUnits /></Route>
+                    <Route path="/view-streams"><ViewsAllStreams /></Route>
+                    <Route path="/units-registration"><UnitsRegistration /></Route>
+                    <Route path="/checklist"><Checklist /></Route>
+                    <Route path="/profile"><Profile /></Route>
                 </Switch>
             </Router>
         </div>

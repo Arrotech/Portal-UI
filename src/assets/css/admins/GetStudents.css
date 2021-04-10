@@ -8,6 +8,10 @@
     height: 100%;
 }
 
+.studentsTable_head{
+    background-color:#203647;
+}
+
 th, td {
     text-align: left;
     padding: 8px;
@@ -15,7 +19,7 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: #12232E;
+    background-color: #203647;
     color: #12232E;
 }
 

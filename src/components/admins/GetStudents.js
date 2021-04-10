@@ -38,9 +38,8 @@ function GetStudents() {
     return (
         <div className="studentsTable">
             <table>
-                <thead>
+                <thead class="studentsTable_head">
                     <tr>
-                        <th>Id</th>
                         <th>Firstname</th>
                         <th>Lastname</th>
                         <th>Surname</th>
@@ -55,7 +54,6 @@ function GetStudents() {
                     {(students.length > 0) ? students.map((student, index) => {
                         return (
                             <tr key={index}>
-                                <td>{student.user_id}</td>
                                 <td>{student.firstname}</td>
                                 <td>{student.lastname}</td>
                                 <td>{student.surname}</td>

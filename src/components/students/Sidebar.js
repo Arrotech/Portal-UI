@@ -30,8 +30,9 @@ function Sidebar() {
             <Link className="sidebar__links" to="/fee-statement"><SidebarOption title="Fee Statement" Icon={MonetizationOnIcon} /></Link>
             <Link className="disabled-link" to="/fees"><SidebarOption title="Fee Structure" Icon={LocalAtmIcon} /></Link><br/>
             <Link className="sidebar__links sidebar__header" to="/checklist"><SidebarOption title="ACTIVITY" Icon={LocalActivityIcon} /></Link>
-            <Link className="disabled-link" to="/view-units"><SidebarOption title="Units" Icon={ListIcon} /></Link>
-            <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Registration" Icon={VerifiedUserIcon} /></Link>
+            <Link className="sidebar__links" to="/view-units"><SidebarOption title="View Units" Icon={ListIcon} /></Link>
+            <Link className="sidebar__links" to="/view-streams"><SidebarOption title="View Streams" Icon={ListIcon} /></Link>
+            <Link className="sidebar__links" to="/units-registration"><SidebarOption title="Unit Registration" Icon={VerifiedUserIcon} /></Link>
             <Link className="sidebar__links" to="/checklist"><SidebarOption title="Checklist" Icon={PlaylistAddCheckIcon} /></Link>
             <Link className="disabled-link" to="/library"><SidebarOption title="Library" Icon={LibraryBooksIcon} /></Link>
             <Link className="disabled-link" to="/hostel"><SidebarOption title="Book Hostel" Icon={HomeIcon} /></Link>

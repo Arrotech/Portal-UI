@@ -1,8 +1,7 @@
 .notificationsTable>table {
     border-collapse: collapse;
-    width: 100%;
+    max-width: 100%;
     font-size: 11px;
-    height: 100px;
 }
 
 th, td {

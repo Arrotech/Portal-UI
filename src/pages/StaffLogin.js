@@ -50,6 +50,7 @@ function StaffLogin() {
             setLoading(false)
             setOpen(true);
             setUserSession(response.data.token, response.data.user)
+            console.log(response.data.user.role)
             history.push('/admin/dashboard')
 
         }).catch(error => {
@@ -57,8 +58,6 @@ function StaffLogin() {
             setOpen(true);
             const status = error.response.data.status;
             const message = error.response.data.message;
-            console.log(message)
-            console.log(status)
             if (status === '400') return setError(message)
             else setError("Something went wrong. Please try again later!")
         })

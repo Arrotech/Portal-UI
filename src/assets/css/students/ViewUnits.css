@@ -1,0 +1,14 @@
+.viewUnits{
+    padding: 10px;
+}
+
+.viewUnits__header{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.viewUnits__header>h3{
+    color: #EEFBFB;
+}

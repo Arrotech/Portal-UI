@@ -8,19 +8,7 @@ import { Link } from 'react-router-dom'
 export const Profile = () => {
     const user = getUser()
     const token = getToken()
-    const [loggedInUser, setLoggedInUser] = useState({
-        admission_no: "sc200-1358-2014",
-        campus_name: "main",
-        course: "bachelor of science",
-        department: "mathematics",
-        email: "kevin@gmail.com",
-        firstname: "Kevin",
-        gender: "male",
-        hostel: "leopard",
-        institution: "Jomokenyatta University of Agriculture and Technology",
-        lastname: "Njotoge",
-        surname: "Gitundu"
-    })
+    const [loggedInUser, setLoggedInUser] = useState([])
     const admission = user.admission_no
 
     useEffect(() => {
