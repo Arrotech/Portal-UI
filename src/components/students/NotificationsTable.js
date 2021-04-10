@@ -24,7 +24,6 @@ function NotificationsTable() {
                         description: notification.description,
                         is_read: notification.is_read,
                     }));
-                    console.log(notifications)
                     setNotifications(notifications)
                 });
         }

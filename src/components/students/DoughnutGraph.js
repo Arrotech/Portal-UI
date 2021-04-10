@@ -8,8 +8,8 @@ export default class DoughnutGraph extends Component {
 	render() {
 		const options = {
             animationEnabled: true,
-            width: 450,
-            height: 150,
+            maxWidth: 440,
+            height: 130,
             backgroundColor: "#12232E",
             fontSize: 11,
 			title: {

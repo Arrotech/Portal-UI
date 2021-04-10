@@ -11,24 +11,26 @@ import DoughnutGraph from './DoughnutGraph';
 import NotificationsTable from './NotificationsTable';
 import LatestFees from './LatestFees'
 import { FeeDeviation } from './LatestFees'
-import { Aggregate, Supplementaries } from './Examinations'
-import { TotalRegisteredUnits } from './RegisteredUnits'
+import { Aggregate, Supplementaries, YearAggregate, YearSupplementaries } from './Examinations'
+import { TotalRegisteredUnits, YearRegisteredUnits } from './RegisteredUnits'
 
 function DashboardSummary() {
     const feeDeviation = FeeDeviation()
     const totalUnits = TotalRegisteredUnits()
     const aggregate = Aggregate()
+    const yearAggregate = YearAggregate()
     const supplementaries = Supplementaries()
-    console.log(aggregate)
+    const yearSupplementaries = YearSupplementaries()
+    const yearUnits = YearRegisteredUnits()
     return (
         <div className="dashboard__summary">
             <div className="dashboardSummary__right">
                 <div className="dashboardSummary__firstRow">
                     <InfoBoxOption className="dashboardSummary__infoBox"
-                        title="AGGREGATE POINTS"
+                        title="GPA"
                         Icon={MenuBookIcon}
                         value={aggregate}
-                        deviation="^10%"
+                        deviation={yearAggregate}
                         text="Since last semester" />
                     <InfoBoxOption className="dashboardSummary__infoBox"
                         title="FEE"
@@ -40,13 +42,13 @@ function DashboardSummary() {
                         title="REGISTERED UNITS"
                         Icon={LibraryBooksIcon}
                         value={totalUnits}
-                        deviation="+6"
+                        deviation={yearUnits}
                         text="Since last semester" />
                     <InfoBoxOption className="dashboardSummary__infoBox"
                         title="SUPPLEMENTARIES"
                         Icon={SmsFailedIcon}
                         value={supplementaries}
-                        deviation="+1"
+                        deviation={yearSupplementaries}
                         text="Since last semester" />
                 </div>
                 <div className="dashboardSummary__secondRow">

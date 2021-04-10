@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getUser, getToken } from '../../Utils/Common'
 
 function LatestFees() {
-    const [latest_fee, setFee] = useState([0]);
+    const [latest_fee, setFee] = useState(0.00);
     const user = getUser()
     const token = getToken()
 
@@ -32,7 +32,7 @@ function LatestFees() {
 }
 
 export const FeeDeviation = () => {
-    const [balance, setBalance] = useState([]);
+    const [balance, setBalance] = useState([0.00]);
     const user = getUser()
     const token = getToken()
 
@@ -50,14 +50,13 @@ export const FeeDeviation = () => {
                 .then((data) => {
                     const balance = data.data;
                     setBalance(balance)
-                    console.log(balance)
                 });
         };
         getFeeDeviation();
     }, []);
     return (
         <div>
-            <p>{balance ? balance.balance : 0}</p>
+            <p>{balance ? balance.balance : 0.00}</p>
         </div>
     )
 }
